@@ -1,0 +1,133 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	font-family: 'Noto Sans JP', sans-serif;
+	color: #2b2a27;
+}
+.container {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+img {
+	width: 100%;
+}
+li {
+	list-style: none;
+}
+
+
+/*************
+画像
+**************/
+.pic-title img {
+	width: 50%;
+	height: 700px;
+	object-fit: cover;
+}
+
+/*************
+タイトル
+**************/
+.pic-title {
+	display: flex;
+}
+.title {
+	width: 50%;
+	box-sizing: border-box;
+	padding: 40px 5% 0 5%;
+}
+.title h1 {
+	font-size: 28px;
+}
+.title p, .title li {
+	font-size: 16px;
+}
+.title p {
+	padding: 20px 0 35px 0;
+}
+.title h2 {
+	padding: 5px 0;
+	border-bottom: 1px solid #CCC;
+}
+.title .ingredient  {
+	display: flex;
+	justify-content: space-between;
+}
+.recipe .ingredient:last-child {
+	margin-bottom: 30px;
+}
+.title li {
+	padding: 6px 0;
+	border-bottom: 1px dotted #CCC;
+}
+.title li:last-child {
+	margin-bottom: 0;
+}
+.title li:first-child {
+	padding-top: 20px;
+}
+
+/*************
+ボタン
+**************/
+.btns {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 60px;
+}
+a.btn {
+	font-size: 16px;
+	text-decoration: none;
+	color: #2b2a27;
+  border: 1px solid #ccc;
+  padding: 10px 25px;
+}
+
+/*************
+作り方
+**************/
+.pic {
+	width: 50%;
+}
+.text {
+	width: 50%;
+}
+.recipe1, .recipe2, .recipe3, .recipe4, .recipe5, .recipe6 {
+	display: flex;
+	justify-content: space-around;
+}
+.recipe img {
+	height: 400px;
+	object-fit: cover;
+}
+.text {
+	box-sizing: border-box;
+	padding: 100px 5%;
+}
+
+
+
+/*************
+レスポンシブ
+**************/
+@media screen and (max-width: 834px){
+	.pic-title {
+		flex-direction: column;
+	}
+	.pic-title img, .title {
+		width: 100%;
+		height: auto;
+	}
+	.recipe1, .recipe2, .recipe3, .recipe4, .recipe5, .recipe6 {
+	flex-direction: column;
+	}
+	.pic, .text {
+	width: 100%;
+	}
+	.recipe2, .recipe4, .recipe6 {
+		flex-direction: column-reverse;
+	}
+
+}
